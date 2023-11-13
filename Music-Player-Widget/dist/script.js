@@ -2,8 +2,8 @@ $(function () {
   var playerTrack = $("#player-track"),
     bgArtwork = $("#bg-artwork"),
     bgArtworkUrl,
-    albumName = $("#album-name"),
     trackName = $("#track-name"),
+    artist = $("#artist"),
     albumArt = $("#album-art"),
     sArea = $("#s-area"),
     seekBar = $("#seek-bar"),
@@ -29,21 +29,24 @@ $(function () {
     nTime = 0,
     buffInterval = null,
     tFlag = false,
-    albums = [
-      "Wolfgang Amadeus Phoenix"
-      , "Time to Pretend"
-      , "Tourist History"
+    tracks = [
+      "1901"
+      , "Kids"
+      , "Undercover Martyn"
+      , "alois"
     ],
-    trackNames = [
-      "Phoenix - 1901"
-      , "MGMT - Kids"
-      , "Two Door Cinema Club - Undercover Martyn"
+    artists = [
+      "Phoenix"
+      , "MGMT"
+      , "Two Door Cinema Club"
+      , "菅野よう子"
     ],
-    albumArtworks = ["_1", "_2", "_3"],
+    albumArtworks = ["_1", "_2", "_3", "_4"],
     trackUrl = [
       "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Phoenix - 1901.mp3"
       , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/MGMT - Kids.mp3"
       , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Two Door Cinema Club - Undercover Martyn.mp3"
+      , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/12. alois.mp3"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
@@ -185,8 +188,8 @@ $(function () {
       tProgress.text("00:00");
       tTime.text("00:00");
 
-      currAlbum = albums[currIndex];
-      currTrackName = trackNames[currIndex];
+      currAlbum = tracks[currIndex];
+      currartist = artists[currIndex];
       currArtwork = albumArtworks[currIndex];
 
       audio.src = trackUrl[currIndex];
@@ -204,8 +207,8 @@ $(function () {
         checkBuffering();
       }
 
-      albumName.text(currAlbum);
-      trackName.text(currTrackName);
+      trackName.text(currAlbum);
+      artist.text(currartist);
       albumArt.find("img.active").removeClass("active");
       $("#" + currArtwork).addClass("active");
 
