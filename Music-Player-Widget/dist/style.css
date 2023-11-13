@@ -40,15 +40,15 @@ body {
   top: -92px;
 }
 
-#album-name {
+#track-name {
   color: #54576f;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
 }
 
-#track-name {
+#artist {
   color: #acaebd;
-  font-size: 13px;
+  font-size: 12px;
   margin: 2px 0 13px 0;
 }
 
@@ -191,17 +191,7 @@ body {
 
 #album-art.active img.active {
   z-index: 1;
-  -webkit-animation: rotateAlbumArt 3s linear 0s infinite forwards;
-          animation: rotateAlbumArt 3s linear 0s infinite forwards;
-}
-
-@-webkit-keyframes rotateAlbumArt {
-  0% {
-    transform: rotateZ(0);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
+  animation: rotateAlbumArt 3s linear 0s infinite forwards;
 }
 
 @keyframes rotateAlbumArt {
