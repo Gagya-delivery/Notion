@@ -31,9 +31,7 @@ $(function () {
     tFlag = false,
     tracks = [
       "1901"
-      , "Kids"
       , "Undercover Martyn"
-      , "alois"
     ],
     artists = [
       "Phoenix"
@@ -41,12 +39,10 @@ $(function () {
       , "Two Door Cinema Club"
       , "菅野よう子"
     ],
-    albumArtworks = ["_1", "_2", "_3", "_4"],
+    albumArtworks = ["_1", "_2"],
     trackUrl = [
       "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Phoenix - 1901.mp3"
-      , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/MGMT - Kids.mp3"
       , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Two Door Cinema Club - Undercover Martyn.mp3"
-      , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/12. alois.mp3"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
