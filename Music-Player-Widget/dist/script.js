@@ -35,9 +35,7 @@ $(function () {
     ],
     artists = [
       "Phoenix"
-      , "MGMT"
       , "Two Door Cinema Club"
-      , "菅野よう子"
     ],
     albumArtworks = ["_1", "_2"],
     trackUrl = [
