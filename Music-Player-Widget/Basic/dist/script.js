@@ -32,16 +32,23 @@ $(function () {
     tracks = [
       "1901"
       , "Undercover Martyn"
+      , "Spider-Woman (Gwen Stacy)"
+      , "We Talk Like Machines"
     ],
     artists = [
       "Phoenix"
       , "Two Door Cinema Club"
+      , "Spider-Man: Across the Spider-Verse"
+      , "Savoir Adore"
     ],
-    albumArtworks = ["_1", "_2"],
+    albumArtworks = ["_1", "_2", "_3", "_4"],
     trackUrl = [
       "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Phoenix - 1901.mp3"
       , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Two Door Cinema Club - Undercover Martyn.mp3"
+      , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Spider-Woman (Gwen Stacy).mp3"
+      , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Savoir Adore - We Talk Like Machines.mp3"
     ],
+      
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
     currIndex = -1;
