@@ -75,8 +75,10 @@ $(function () {
     }, 300);
     
     audio.addEventListener('ended', function() {
-    selectTrack(1);
-  }, false);
+    if (audio.currentTime === audio.duration) {
+        selectTrack(1);
+    }
+}, false);
   }
       
 
