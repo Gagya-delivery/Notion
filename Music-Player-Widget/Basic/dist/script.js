@@ -34,19 +34,22 @@ $(function () {
       , "Undercover Martyn"
       , "Spider-Woman (Gwen Stacy)"
       , "We Talk Like Machines"
+      , "all-american bitch"
     ],
     artists = [
       "Phoenix"
       , "Two Door Cinema Club"
       , "Spider-Man: Across the Spider-Verse"
       , "Savoir Adore"
+      , "Olivia Rodrigo"
     ],
-    albumArtworks = ["_1", "_2", "_3", "_4"],
+    albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
     trackUrl = [
       "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Phoenix - 1901.mp3"
       , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Two Door Cinema Club - Undercover Martyn.mp3"
       , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Spider-Woman (Gwen Stacy).mp3"
       , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Savoir Adore - We Talk Like Machines.mp3"
+      , "https://raw.githubusercontent.com/Gagya-delivery/Notion/main/Music-Player-Widget/mp3/Olivia Rodrigo - all-american bitch.mp3"
     ],
       
     playPreviousTrackButton = $("#play-previous"),
