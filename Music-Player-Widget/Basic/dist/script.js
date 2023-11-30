@@ -229,26 +229,25 @@ $(function () {
 
   function initPlayer() {
     audio = new Audio();
-
     selectTrack(0);
-
     audio.loop = false;
 
     playPauseButton.on("click", playPause);
-
     sArea.mousemove(function (event) {
       showHover(event);
     });
-
     sArea.mouseout(hideHover);
-
     sArea.on("click", playFromClickedPos);
-
     $(audio).on("timeupdate", updateCurrTime);
 
     playPreviousTrackButton.on("click", function () {
-      selectTrack(-1);
+      if (audio.currentTime <= 3 && currIndex > 0) {
+        selectTrack(-1);
+      } else {
+        audio.currentTime = 0;
+      }
     });
+
     playNextTrackButton.on("click", function () {
       selectTrack(1);
     });
